@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammed Lubaib KK</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f6;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #e0efe7;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #1e4d2b;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      background-color: #f0f7f4;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a3c2e;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #2c5949;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background-color: #e8f3ee;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    button {
+      background-color: #2c5949;
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #244c3d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Muhammed Lubaib KK</h1>
+    <p>Graphic Designer • Video Editor • Islamic Scholar</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="card">
+      <h2>About</h2>
+      <p>Hello! I'm Muhammed Lubaib KK. I specialize in crafting elegant visual designs and editing compelling videos. My journey also extends into the spiritual path, studying and teaching Islamic knowledge with sincerity and devotion.</p>
+      <p>Whether it's through pixels or principles, I aim to inspire, educate, and elevate.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Graphic Design – Posters, Logos, Layouts</li>
+        <li>Video Editing – Short Films, YouTube Content, Reels</li>
+        <li>Islamic Studies – Teaching, Tafsir, Khutbah</li>
+        <li>Languages – Malayalam, Arabic, English</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>If you'd like to connect with me for work or learning, feel free to reach out.</p>
+      <p><strong>Email:</strong> lubaib@example.com</p>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <button onclick="saySalam()">Say Salam</button>
+      <p id="salamMessage" style="margin-top: 1rem; color: #2c5949;"></p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Muhammed Lubaib KK. All rights reserved.
+  </footer>
+
+  <script>
+    function saySalam() {
+      document.getElementById("salamMessage").innerText = "Wa Alaikum Assalam wa Rahmatullah!";
+    }
+  </script>
+</body>
+</html>
