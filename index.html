@@ -5,99 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammed Lubaib KK</title>
   <style>
-    body {
+    :root {
+      --bg: #f7f9f8;
+      --text: #2e3d3b;
+      --primary: #356859;
+      --accent: #d4e9e2;
+      --card: #ffffff;
+      --shadow: rgba(0, 0, 0, 0.06);
+    }
+
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #00000;
-      color: #333;
-      line-height: 1.6;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
       scroll-behavior: smooth;
     }
 
     header {
-      background-color: #e0efe7;
-      padding: 2rem;
+      background-color: var(--accent);
       text-align: center;
-      border-bottom: 1px solid #ccc;
+      padding: 4rem 1rem 2rem;
+      box-shadow: 0 2px 4px var(--shadow);
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 4px 10px var(--shadow);
+      margin-bottom: 1rem;
     }
 
     header h1 {
-      margin: 0;
       font-size: 2rem;
-      color: #1e4d2b;
+      color: var(--primary);
     }
 
     header p {
+      font-size: 1.1rem;
+      color: #444;
       margin-top: 0.5rem;
-      color: #555;
-      font-size: 1rem;
     }
 
     nav {
+      background: white;
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 1rem;
-      background-color: #f0f7f4;
       position: sticky;
       top: 0;
-      border-bottom: 1px solid #ddd;
+      box-shadow: 0 1px 3px var(--shadow);
+      z-index: 1000;
     }
 
     nav a {
       text-decoration: none;
-      color: #1a3c2e;
+      color: var(--primary);
       font-weight: 500;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      text-decoration: underline;
+      color: #1d4238;
     }
 
     section {
-      padding: 3rem 1rem;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 3rem 1.5rem;
     }
 
     h2 {
-      color: #2c5949;
+      color: var(--primary);
       margin-bottom: 1rem;
+      font-size: 1.6rem;
     }
 
     .card {
-      background-color: #ffffff;
+      background-color: var(--card);
       border-radius: 12px;
-      padding: 1.5rem;
+      padding: 2rem;
       margin-bottom: 2rem;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      box-shadow: 0 4px 10px var(--shadow);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    ul {
+      padding-left: 1.2rem;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background-color: #e8f3ee;
+      background-color: var(--accent);
       color: #666;
       font-size: 0.9rem;
     }
 
     button {
-      background-color: #2c5949;
+      background-color: var(--primary);
       color: white;
       border: none;
       padding: 0.6rem 1.2rem;
       border-radius: 6px;
       cursor: pointer;
       font-size: 1rem;
+      margin-top: 1rem;
     }
 
     button:hover {
-      background-color: #244c3d;
+      background-color: #2a4e44;
+    }
+
+    #salamMessage {
+      margin-top: 1rem;
+      color: var(--primary);
+      font-weight: 500;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      header h1 {
+        font-size: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
+    <img src="images/lubbb.jpg" alt="Muhammed Lubaib KK Profile Photo" />
     <h1>Muhammed Lubaib KK</h1>
     <p>Graphic Designer • Video Editor • Islamic Scholar</p>
   </header>
@@ -111,8 +165,7 @@
   <section id="about">
     <div class="card">
       <h2>About</h2>
-      <p>Hello! I'm Muhammed Lubaib KK. I specialize in crafting elegant visual designs and editing compelling videos. My journey also extends into the spiritual path, studying and teaching Islamic knowledge with sincerity and devotion.</p>
-      <p>Whether it's through pixels or principles, I aim to inspire, educate, and elevate.</p>
+      <p>As a creative professional and spiritual learner, I merge visual storytelling with timeless values. I design with heart, edit with clarity, and teach with sincerity. My journey in both design and Islamic scholarship reflects a balance of art and authenticity.</p>
     </div>
   </section>
 
@@ -120,10 +173,10 @@
     <div class="card">
       <h2>Skills</h2>
       <ul>
-        <li>Graphic Design – Posters, Logos, Layouts</li>
-        <li>Video Editing – Short Films, YouTube Content, Reels</li>
-        <li>Islamic Studies – Teaching, Tafsir, Khutbah</li>
-        <li>Languages – Malayalam, Arabic, English</li>
+        <li>Graphic Design – Posters, Branding, Digital Art</li>
+        <li>Video Editing – Reels, Documentaries, Educational Content</li>
+        <li>Islamic Scholarship – Tafsir, Hadith, Public Talks</li>
+        <li>Language Fluency – Malayalam, Arabic, English</li>
       </ul>
     </div>
   </section>
@@ -131,16 +184,16 @@
   <section id="contact">
     <div class="card">
       <h2>Contact</h2>
-      <p>If you'd like to connect with me for work or learning, feel free to reach out.</p>
+      <p>Feel free to get in touch for collaborations, discussions, or learning sessions.</p>
       <p><strong>Email:</strong> lubaib@example.com</p>
       <p><strong>Phone:</strong> +91 98765 43210</p>
       <button onclick="saySalam()">Say Salam</button>
-      <p id="salamMessage" style="margin-top: 1rem; color: #2c5949;"></p>
+      <p id="salamMessage"></p>
     </div>
   </section>
 
   <footer>
-    &copy; 2025 Muhammed Lubaib KK. All rights reserved.
+    &copy; 2025 Muhammed Lubaib KK. Crafted with intention and care.
   </footer>
 
   <script>
